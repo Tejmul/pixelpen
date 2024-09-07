@@ -31,7 +31,7 @@ function App() {
         <Editor language="css" displayName="CSS" value={css} onChange={setCss}/>
         <Editor language="javascript" displayName="JavaScript" value={js} onChange={setJs}/>
       </div>
-      <div className={`result ${expand ? '' : 'collapsed'}`}>
+      <div className={`result ${expand ? '' : 'fullscreen'}`}>
         <button className="expand" onClick={()=> setExpand(prevExpand => !prevExpand)}><FontAwesomeIcon icon={expand ? faAngleUp : faAngleDown} /></button>
         <iframe 
         srcDoc={Doc}

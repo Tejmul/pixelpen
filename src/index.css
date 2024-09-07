@@ -35,7 +35,7 @@ body {
 }
 
 .editor.collapsed{
-  flex-grow: 4;
+  flex-grow: 3;
 }
 
 .editor.collapsed .code-mirror-scroll{

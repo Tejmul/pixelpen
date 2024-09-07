@@ -23,10 +23,10 @@ export default function Editor(props) {
         onChange(value)
     }
     return (
-        <div className={`editor ${open ? '' : 'fullscreen'}`}>
+        <div className={`editor ${open ? '' : 'collapsed'}`}>
             <div className='Title'>
                 {displayName}
-                <button className='code_expand' onClick={()=> setOpen(prevOpen => !prevOpen)}><FontAwesomeIcon icon={open ? faExpandAlt : faCompressAlt} /></button>
+                <button className='code_expand' onClick={()=> setOpen(prevOpen => !prevOpen)}><FontAwesomeIcon icon={open ? faExpandAlt : faCompressAlt } /></button>
             </div>
             <ControlledEditor
                 onBeforeChange={handleChange}
