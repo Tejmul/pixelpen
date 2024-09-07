@@ -97,8 +97,8 @@ body {
   overflow: hidden;
   position: relative;
   border: 1vh solid black;
-  transition: height 0.3s ease;
 }
+
 .result.fullscreen {
   height: 100vh;
   width: 100vw;
