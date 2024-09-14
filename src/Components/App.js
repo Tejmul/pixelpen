@@ -5,8 +5,6 @@ import { faAngleUp, faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import useLocalStorage from "../hooks/useLocalStorage";
 import {text_css, text_html, text_js} from "../rock paper scissors/first";
 
-
-
 function App() {
   const [html, setHtml] = useLocalStorage('html',text_html);
   const [css, setCss] = useLocalStorage('css',text_css)
@@ -27,8 +25,19 @@ function App() {
 
   const [expand, setExpand] = useState(true);
 
+  const handleReset = () => {
+    localStorage.clear();
+    setHtml(text_html);
+    setCss(text_css);
+    setJs(text_js);
+  };
+
   return (
     <>
+      <div class="navbar" fit>
+        <h2>CodePen</h2>
+        <button className="reset" onClick={handleReset}>Reset</button>
+      </div>
       <div className="editor-space">
         <Editor language="xml" displayName="HTML" value={html} onChange={setHtml}/>
         <Editor language="css" displayName="CSS" value={css} onChange={setCss}/>

@@ -5,13 +5,13 @@ export const text_html = `<div id="head">
 
 <div id="main_in">
     <div id="choice">
-        <div id="rock" class="choice">
+        <div id="rock" class="choic">
             <img src="https://i.imgur.com/ATTqi3M.jpg" alt="rock">
         </div>
         <div id="paper" class="choic">
             <img src="https://i.imgur.com/UwBToA5.jpg" alt="Paper">
         </div>
-        <div id="scissor" class="choice">
+        <div id="scissor" class="choic">
             <img src="https://i.imgur.com/IoMjEmX.jpg" alt="scissor">
         </div>
     </div>
@@ -116,23 +116,12 @@ body {
     background-color: black;
     color: aqua;
     margin: 5rem;
-    width: 10rem;
-    height: 5rem;
-    font-size: 2rem;
-    text-decoration: solid;
-    border-radius: 50%;
-}
-
-/* aside{
-    height: 25rem;
-    width: 20rem;
-    background-color: white;
-    text-align: center;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */` ;
+	padding: 0.7rem;
+ 	font-size: 2rem;
+	text-decoration: solid;
+	border-radius: 1rem;
+    border: none;
+}` ;
 
 
 export const text_js = `let userScore = 0 ;

@@ -4,6 +4,30 @@ body {
   background-color: #f0f0f0;
 }
 
+.navbar{
+  background-color:  hsl(225, 6%, 13%);
+  border: 0.15rem solid rgb(8, 17, 8);
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar h2 {
+  color: white;
+  margin: 0;
+  padding: 0.3rem;
+}
+
+.navbar button{
+  background-color: rgb(32, 146, 32);
+  margin: 0.2rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: large;
+  color: white;
+  padding: 0.5rem;
+  width: 7rem;
+}
+
 .editor-space {
   background-color: hsl(225, 6%, 25%);
   height: 50vh;

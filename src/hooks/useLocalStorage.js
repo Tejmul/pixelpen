@@ -2,7 +2,6 @@ import {useState, useEffect} from 'react';
 
 const PREFIX = 'CODEPEN CLONE ';
 export default function useLocalStorage(key, initialValue) {
-    // localStorage.clear();
     const prefixkey = PREFIX + key;
     const [value, setValue] = useState(()=>{
         const jsonValue = localStorage.getItem(prefixkey)
