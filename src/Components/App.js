@@ -1,13 +1,16 @@
 import React, { useState, useEffect } from "react";
 import Editor from "./Editor";
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import { faAngleUp, faAngleDown } from '@fortawesome/free-solid-svg-icons'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import { faAngleUp, faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import useLocalStorage from "../hooks/useLocalStorage";
+import {text_css, text_html, text_js} from "../rock paper scissors/first";
+
 
 
 function App() {
-  const [html, setHtml] = useState('<h1>Welcome Hacker</h1>')
-  const [css, setCss] = useState('body{background-color: black; color: white;}')
-  const [js, setJs] = useState('')
+  const [html, setHtml] = useLocalStorage('html',text_html);
+  const [css, setCss] = useLocalStorage('css',text_css)
+  const [js, setJs] = useLocalStorage('js',text_js)
   const [Doc, setDoc] = useState('')
 
   useEffect(()=>{
