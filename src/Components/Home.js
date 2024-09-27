@@ -52,7 +52,7 @@ function Home() {
   return (
     <>
       <div className="navbar">
-        <h2>Code-Editor</h2>
+        <h2>Pixel-Pen</h2>
         {username && <h3 style={{ color: 'white' }}>Hello, {username}</h3>}
         <div className="navbar-buttons">
           <button className="reset" onClick={handleReset}>Reset</button>
