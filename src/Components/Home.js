@@ -34,11 +34,14 @@ function Home() {
   const navigate = useNavigate();
 
   const handleReset = () => {
-    localStorage.clear();
+    localStorage.removeItem('html');
+    localStorage.removeItem('css');
+    localStorage.removeItem('js');
     setHtml(text_html);
     setCss(text_css);
     setJs(text_js);
   };
+  
 
   const handleLogout = () => {
     localStorage.removeItem('token');
@@ -49,7 +52,7 @@ function Home() {
   return (
     <>
       <div className="navbar">
-        <h2>PixelPen</h2>
+        <h2>Code-Editor</h2>
         {username && <h3 style={{ color: 'white' }}>Hello, {username}</h3>}
         <div className="navbar-buttons">
           <button className="reset" onClick={handleReset}>Reset</button>
